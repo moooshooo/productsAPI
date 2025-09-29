@@ -1,11 +1,13 @@
 /*
-GET https://api.futureplayground.se/products
-Description: Return a list of products.
-Response type: Product[]
-*/
+ * @Author: MoS 
+ * @Date: 2025-09-29 19:43:29 
+ * @Last Modified by: Mos
+ * @Last Modified time: 2025-09-29 20:05:31
+ * Project: Pokemon API
+ */
 
-console.log("Mos startar\n===========")
 
+console.log("Pokemon API\n===========")
 
 const productList = document.getElementsByClassName("product-list")[0]
 // Fetch anropar en extern API i syftet att få en löfte om uppfyllnad. När löftet(promise) blir uppfylld. Då kan funktionen i "then" starta.
