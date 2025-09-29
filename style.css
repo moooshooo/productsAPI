@@ -1,0 +1,17 @@
+/*
+
+*/
+
+.product.list {
+
+}
+
+.product {
+    background-color: bisque;
+    width: fit-content;
+} 
+
+.product img {
+    width: 200px;
+    border-radius: 7px;
+}
