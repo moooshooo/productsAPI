@@ -13,29 +13,29 @@ fetch("https://api.futureplayground.se/products").then((vadJagVill) => {
     
     //console.log("Servern gillar oss,,,  yeiii. den svara till oss.",vadJagVill)
     
-    const data = vadJagVill.json().then.
-    ((inneHall) => {
-        console.log( "Kan jag detta?",inneHall)
-    })
+    vadJagVill.json().then((inneHall) => {
+        
 
     for (product of inneHall) {
         const productElement = document.createElement("div")
         productElement.classList.add("product")
 
         const productImg = document.createElement("img")
-        productImg.src = inneHall.options.primary_options[0].image
+        productImg.src = product.options.primary_options[0].image
 
         const productTitle = document.createElement("p")
-        productTitle.textContent = inneHall.name
+        productTitle.textContent = product.name
 
         const productPrice = document.createElement("p")
-        productPrice.textContent = inneHall.price
+        productPrice.textContent = product.price
 
         productElement.appendChild(productImg)
         productElement.appendChild(productTitle)
         productElement.appendChild(productPrice)
 
-        productElement.appendChild(productElement)
+        //Här lägger du allt i DIVen "productlist"
+        productList.appendChild(productElement)
     }
 })
 
+})
