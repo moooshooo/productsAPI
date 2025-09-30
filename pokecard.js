@@ -2,7 +2,7 @@
  * @Author: MoS 
  * @Date: 2025-09-30 13:05:51 
  * @Last Modified by: MoS
- * @Last Modified time: 2025-09-30 14:38:45
+ * @Last Modified time: 2025-09-30 18:19:04
  */
 
 //const pokemonCardList = document.getElementById("pokemonCardList")
@@ -19,8 +19,6 @@ const returnSpeData = await getSpeData.json()
 
 const getEvoData = await fetch(returnSpeData.evolution_chain.url)
 const returnEvoData = await getEvoData.json()
-
-
 
 console.log(returnOnePokeData.name,returnOnePokeData.base_experience,returnSpeData.color.name, returnEvoData.baby_trigger_item)
 
