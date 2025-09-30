@@ -2,13 +2,52 @@
  * @Author: MoS 
  * @Date: 2025-09-29 19:43:40 
  * @Last Modified by: Mos
- * @Last Modified time: 2025-09-29 20:48:37
+ * @Last Modified time: 2025-09-30 22:49:55
  */
+#pokemonCardList{
+}
+.pokeGroupHolder {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: row;
+}
+.pokemonCard {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 150px;
+    height: 230px;
+    /* position: relative;
+    top: 0;
+    left: 0;  */
 
-.product.list {
+    background-color: #dbdda2;
+    margin: 1em 1em;
+    box-shadow: 1px 1px 10px #333;
+    border: 12px solid #fff;
 
 }
-
-.pokemonCard {
-
+#pokomenId-1 {
+    z-index: 3;
+}
+#pokomenId-2 {
+    z-index: 2;
+/* display: none; */
+}
+#pokomenId-3 {
+    z-index: 1;
+/* display: none; */
+}
+.pokeName {
+    width: 100%;
+    text-align: center;
+    font-size: 10px;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+}
+.pokeCardImg {
+    background-color: #fff;
 }
