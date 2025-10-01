@@ -1,15 +1,15 @@
 /*
  * @Author: MoS 
  * @Date: 2025-09-30 13:05:51 
- * @Last Modified by: Mos
- * @Last Modified time: 2025-09-30 22:25:42
+ * @Last Modified by: MoS
+ * @Last Modified time: 2025-10-01 11:37:02
  */
 console.log("Powered by: MosKaffe\n===========")
 
 const pokemonCardList = document.getElementsByClassName("pokemonCardList")[0]
 
 async function getPokemontList() {
-    const getPokemons = await fetch("https://pokeapi.co/api/v2/pokemon?limit=9")
+    const getPokemons = await fetch("https://pokeapi.co/api/v2/pokemon?limit=20")
     const returnPokemons = await getPokemons.json()
         
         for (let pokemon of returnPokemons.results) {
