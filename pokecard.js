@@ -2,7 +2,7 @@
  * @Author: MoS 
  * @Date: 2025-09-30 13:05:51 
  * @Last Modified by: MoS
- * @Last Modified time: 2025-10-01 15:31:21
+ * @Last Modified time: 2025-10-03 07:58:35
  */
 console.log("Powered by: MosKaffe\n===========")
 
@@ -43,14 +43,13 @@ async function getPokemontList() {
         pokeCardHolder.setAttribute("id", `pokomenId-${returnOnePokeData.id}`)
 
         const pokeCardImg = document.createElement("img")
-        pokeCardImg.src = returnOnePokeData.sprites.front_default
-        pokeCardImg.alt = pokemon.name
+        pokeCardImg.src = returnOnePokeData.sprites.other["official-artwork"].front_default
+        pokeCardImg.alt = `This is a pokemon named: ${pokemon.name}`
         pokeCardImg.classList.add("pokeCardImg")
 
         const pokeName = document.createElement("p")
         pokeName.classList.add("pokeName")
         pokeName.textContent = pokemon.name 
-
         
         pokeCardHolder.appendChild(pokeCardImg)
         pokeCardHolder.appendChild(pokeName)
